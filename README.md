@@ -20,3 +20,4 @@ Development Prerequisites
 + Java 1.7
 + Eclipse Kepler
 + Eclipse M2E
++ Maven 3
