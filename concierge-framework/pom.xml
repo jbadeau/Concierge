@@ -8,6 +8,7 @@
 	</parent>
 
 	<artifactId>concierge-framework</artifactId>
+	<packaging>bundle</packaging>
 	<name>Concierge Framework</name>
 	<description>The Concierge OSGi R5 implementation.</description>
 
@@ -26,8 +27,21 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<extensions>true</extensions>
 				<configuration>
-					<finalName>concierge-${project.version}</finalName>
+					<instructions>
+						<Bundle-SymbolicName>org.eclipse.concierge</Bundle-SymbolicName>
+						<Bundle-Name>Concierge Framework</Bundle-Name>
+						<Bundle-Description>OSGi R5 Framework.</Bundle-Description>
+						<Bundle-Vendor>Eclipse.org - Concierge</Bundle-Vendor>
+						<Export-Package>org.osgi.framework.*;-split-package:=merge-first,org.osgi.resource,org.osgi.service.*,org.osgi.util.tracker</Export-Package>
+						<Private-Package>org.eclipse.concierge.framework.*</Private-Package>
+						<Import-Package>!*</Import-Package>
+					</instructions>
 				</configuration>
 			</plugin>
 		</plugins>
