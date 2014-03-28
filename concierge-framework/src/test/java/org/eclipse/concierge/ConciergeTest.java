@@ -30,7 +30,6 @@ public class ConciergeTest {
 
 	@Test
 	public void init_checkStartLevelIs0() {
-		Framework framwork = factory.newFramework(null);
 		fail("check that start level is 0");
 	}
 
