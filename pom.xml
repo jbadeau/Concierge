@@ -15,7 +15,7 @@
 	</properties>
 
 	<modules>
-		<module>concierge-framework</module>
+		<module>concierge.framework</module>
 	</modules>
 
 	<prerequisites>
@@ -155,7 +155,7 @@
 		<dependencies>
 			<dependency>
 				<groupId>org.eclipse</groupId>
-				<artifactId>concierge-framework</artifactId>
+				<artifactId>concierge.framework</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>

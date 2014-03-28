@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>org.eclipse</groupId>
+		<artifactId>concierge</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+
+	<artifactId>concierge.framework</artifactId>
+	<packaging>bundle</packaging>
+	<name>Concierge Framework</name>
+	<description>The Concierge OSGi R5 implementation.</description>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<extensions>true</extensions>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+					<encoding>${project.build.sourceEncoding}</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<extensions>true</extensions>
+				<configuration>
+					<instructions>
+						<Bundle-SymbolicName>org.eclipse.concierge</Bundle-SymbolicName>
+						<Bundle-Name>Concierge Framework</Bundle-Name>
+						<Bundle-Description>OSGi R5 Framework.</Bundle-Description>
+						<Bundle-Vendor>Eclipse.org - Concierge</Bundle-Vendor>
+						<Export-Package>org.osgi.framework.*;-split-package:=merge-first,org.osgi.resource,org.osgi.service.*,org.osgi.util.tracker</Export-Package>
+						<Private-Package>org.eclipse.concierge.framework.*</Private-Package>
+						<Import-Package>!*</Import-Package>
+					</instructions>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<!-- test -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+		</dependency>
+	</dependencies>
+
+</project>
