@@ -133,8 +133,8 @@
 					</dependency>
 				</dependencies>
 				<configuration>
-					<inputEncoding>UTF-8</inputEncoding>
-					<outputEncoding>UTF-8</outputEncoding>
+					<inputEncoding>${project.build.sourceEncoding}</inputEncoding>
+					<outputEncoding>${project.build.sourceEncoding}</outputEncoding>
 				</configuration>
 			</plugin>
 		</plugins>
