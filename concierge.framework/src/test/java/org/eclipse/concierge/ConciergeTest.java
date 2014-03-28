@@ -49,7 +49,7 @@ public class ConciergeTest extends AbstractConciergeTests {
 	}
 
 	@Test
-	public void testSystemBundle02() {
+	public void testStartAndStop() {
 		// create/start/stop/start/stop test
 		File config = computeTestDataRoot(this.getClass());
 		Map<String, String> configuration = new HashMap<String, String>();
