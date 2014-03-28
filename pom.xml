@@ -55,6 +55,11 @@
 		</license>
 	</licenses>
 
+	<issueManagement>
+		<system>Bugzilla</system>
+		<url>https://bugs.eclipse.org/bugs/enter_bug.cgi?product=Concierge</url>
+	</issueManagement>
+
 	<scm>
 		<connection>scm:git:http://git.eclipse.org/gitroot/concierge/org.eclipse.concierge.git</connection>
 		<developerConnection>scm:git:ssh://git.eclipse.org/gitroot/concierge/org.eclipse.concierge.git</developerConnection>
