@@ -14,3 +14,9 @@ The following are the goals and plans for the Concierge project:
 The following are the non-goals:
 
 + It is not a goal to run the Eclipse IDE on Concierge any time soon.
+
+Development Prerequisites
+
++ Java 1.7
++ Eclipse Kepler
++ Eclipse M2E
