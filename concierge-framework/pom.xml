@@ -27,7 +27,7 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
 				<configuration>
-					<finalName>${concierge}-${project.version}</finalName>
+					<finalName>concierge-${project.version}</finalName>
 				</configuration>
 			</plugin>
 		</plugins>
