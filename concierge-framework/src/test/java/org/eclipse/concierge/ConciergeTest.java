@@ -25,23 +25,23 @@ public class ConciergeTest {
 
 	@Test
 	public void init_checkBundleContextIsValid() {
-		Factory factory = new Factory();
-		Framework framwork = factory.newFramework(null);
 		assertNotNull(framework.getBundleContext());
 	}
 
 	@Test
 	public void init_checkStartLevelIs0() {
-		Factory factory = new Factory();
 		Framework framwork = factory.newFramework(null);
-		// assertEquals(framework.getState(), Bundle.STARTING);
+		fail("check that start level is 0");
 	}
 
 	@Test
 	public void init_checkEventHandlingIsEnabled() {
-		Factory factory = new Factory();
-		Framework framwork = factory.newFramework(null);
-		// assertEquals(framework.getState(), Bundle.STARTING);
+		fail("check that event handling is enabled");
+	}
+
+	@Test
+	public void init_checkServicesAreRegistered() {
+		fail("check that services are registered");
 	}
 
 }
