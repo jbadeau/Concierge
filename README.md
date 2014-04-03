@@ -21,3 +21,8 @@ Development Prerequisites
 + Eclipse Kepler
 + Eclipse M2E
 + Maven 3
++ 
+
+Potential Issues
+
++ JDK 1.7 is required because of emptyCollections. If removed then the code would work down to JDK 1.5.
