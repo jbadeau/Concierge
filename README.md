@@ -19,9 +19,9 @@ Development Prerequisites
 
 + Java 1.7
 + Eclipse Kepler
-+ Eclipse M2E
++ Eclipse M2E + Connectors
 + Maven 3
-+ 
++ Git
 
 Potential Issues
 
